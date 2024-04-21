@@ -1,0 +1,9 @@
+Flask == 3.0.3
+Annoy == 1.17.3
+Numpy == 1.23.5
+Sklearn == 1.4.1.post1 
+OneHotEncoder
+StandardScaler
+PCA
+Pickle == 0.7.5
+Pandas == 2.0.3
