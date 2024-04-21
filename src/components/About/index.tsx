@@ -12,24 +12,24 @@ const About = () => {
             <div className="w-full px-4 lg:w-1/2">
               <div className="mb-12 max-w-[540px] lg:mb-0">
                 <h2 className="mb-5 text-3xl font-bold leading-tight text-dark dark:text-white sm:text-[40px] sm:leading-[1.2]">
-                  Brilliant Toolkit to Build Next.js SaaS Websites.
+                  Optimizing JEE Preparation: Personalized Study Schedules
                 </h2>
                 <p className="mb-10 text-base leading-relaxed text-body-color dark:text-dark-6">
-                  The main thrust is to focus on educating attendees on how to
-                  best protect highly vulnerable business applications with
-                  interactive panel discussions and roundtables led by subject
-                  matter experts.
+                  Unlocking the full potential of personalized learning, our
+                  customized schedules offer tailored study plans designed to
+                  optimize your preparation for the JEE exam. Explore the
+                  features below to see how our flexible and adaptive approach
+                  can help you achieve your academic goals:
                   <br /> <br />
-                  The main thrust is to focus on educating attendees on how to
-                  best protect highly vulnerable business applications with
-                  interactive panel.
+                  Explore the chatbot below to see how our flexible and adaptive
+                  approach can help you achieve your academic goals:
                 </p>
 
                 <a
-                  href="/#"
+                  href="https://www.morphic.sh/"
                   className="inline-flex items-center justify-center rounded-md bg-primary px-7 py-3 text-center text-base font-medium text-white duration-300 hover:bg-primary/90"
                 >
-                  Know More
+                  Link to chatbot
                 </a>
               </div>
             </div>

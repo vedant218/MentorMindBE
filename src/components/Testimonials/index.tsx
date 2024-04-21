@@ -5,28 +5,28 @@ import SingleTestimonial from "./SingleTestimonial";
 const testimonialData: Testimonial[] = [
   {
     id: 1,
-    name: "Sabo Masties",
-    designation: "Founder @ Rolex",
+    name: "Raghav Meattle",
+    designation: "JEE AIR 21. Ph.D. Mathematics",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+      "With a passion for unlocking the potential in young minds, Raghav Meattle is a seasoned IIT JEE mentor known for his personalized approach to coaching. Armed with years of teaching experience and a knack for simplifying complex concepts, he has guided numerous students to success in one of the toughest exams in the world.",
     image: "/images/testimonials/author-01.png",
     star: 5,
   },
   {
     id: 2,
-    name: "Margin Gesmu",
-    designation: "Founder @ UI Hunter",
+    name: "Vedant Deshmukh",
+    designation: "JEE AIR 211. Ph.D. Mathematics",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+      "With a passion for unlocking the potential in young minds, Vedant Deshmukh is a seasoned IIT JEE mentor known for his personalized approach to coaching. Armed with years of teaching experience and a knack for simplifying complex concepts, he has guided numerous students to success in one of the toughest exams in the world..",
     image: "/images/testimonials/author-02.png",
     star: 5,
   },
   {
     id: 3,
     name: "William Smith",
-    designation: "Founder @ Trorex",
+    designation: "Certified Chemistry Expert",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+      "With a passion for unlocking the potential in young minds, Vedant Deshmukh is a seasoned IIT JEE mentor known for his personalized approach to coaching. Armed with years of teaching experience and a knack for simplifying complex concepts, he has guided numerous students to success in one of the toughest exams in the world.",
     image: "/images/testimonials/author-03.png",
     star: 5,
   },
@@ -38,8 +38,8 @@ const Testimonials = () => {
       <div className="container px-4">
         <SectionTitle
           subtitle="Testimonials"
-          title="What our Client Say"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="Top rated Mentors of the week!"
+          paragraph="The guiding stars in the constellation of IIT JEE coaching. Driven by passion and expertise, these mentors have earned the admiration and respect of their students for their exceptional dedication and transformative impact."
           width="640px"
           center
         />

@@ -9,7 +9,7 @@ const CallToAction = () => {
             <div className="w-full px-4">
               <div className="mx-auto max-w-[570px] text-center">
                 <h2 className="mb-2.5 text-3xl font-bold text-white md:text-[38px] md:leading-[1.44]">
-                  <span>What Are You Looking For?</span>
+                  <span>What Are You waiting For?</span>
                   <span className="text-3xl font-normal md:text-[40px]">
                     {" "}
                     Get Started Now{" "}
@@ -23,7 +23,7 @@ const CallToAction = () => {
                   href="/"
                   className="inline-block rounded-md border border-transparent bg-secondary px-7 py-3 text-base font-medium text-white transition hover:bg-[#0BB489]"
                 >
-                  Start using Play
+                  Start using MentorMind
                 </Link>
               </div>
             </div>
