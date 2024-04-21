@@ -5,8 +5,8 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Blog Grids | Play SaaS Starter Kit and Boilerplate for Next.js",
-  description: "Blog grids page description",
+    "MentorMind",
+  description: "MentorMind: Your Journey, Our Guidance",
 };
 
 const Blog = () => {

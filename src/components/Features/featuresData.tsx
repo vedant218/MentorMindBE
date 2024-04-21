@@ -17,8 +17,8 @@ const featuresData: Feature[] = [
         />
       </svg>
     ),
-    title: "Free and Open-Source",
-    paragraph: "Lorem Ipsum is simply dummy text of the printing and industry.",
+    title: "Personalized Learning Paths",
+    paragraph: "Utilize advanced AI algorithms to create customized study plans based on each student's strengths, weaknesses, and learning pace.",
     btn: "Learn More",
     btnLink: "/#",
   },
@@ -38,8 +38,8 @@ const featuresData: Feature[] = [
         />
       </svg>
     ),
-    title: "Modern Design",
-    paragraph: "Lorem Ipsum is simply dummy text of the printing and industry.",
+    title: "Live Mentor Sessions",
+    paragraph: "Provide access to live sessions with experienced mentors who offer guidance, clarification, and motivation to students, addressing their doubts and queries in real-time.",
     btn: "Learn More",
     btnLink: "/#",
   },
@@ -91,8 +91,8 @@ const featuresData: Feature[] = [
         />
       </svg>
     ),
-    title: "SaaS Starter Kit",
-    paragraph: "Lorem Ipsum is simply dummy text of the printing and industry.",
+    title: "Progress Tracking Dashboard",
+    paragraph: "Enable students to track their progress and performance through intuitive dashboards that display scores, strengths, weaknesses, and areas requiring further focus.",
     btn: "Learn More",
     btnLink: "/#",
   },
@@ -124,8 +124,8 @@ const featuresData: Feature[] = [
         />
       </svg>
     ),
-    title: "All Essential Integrations",
-    paragraph: "Lorem Ipsum is simply dummy text of the printing and industry.",
+    title: "Personalized Mentor Matching",
+    paragraph: "Our advanced AI algorithms analyze your strengths, weaknesses, and goals to connect you with the perfect mentor tailored to your individual learning needs, ensuring personalized guidance and support throughout your JEE preparation journey",
     btn: "Learn More",
     btnLink: "/#",
   },

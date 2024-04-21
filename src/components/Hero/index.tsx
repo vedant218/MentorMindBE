@@ -16,26 +16,30 @@ const Hero = () => {
                 data-wow-delay=".2s"
               >
                 <h1 className="mb-6 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-[1.2]">
-                  Open-source SaaS Starter Kit and Boilerplate for Next.js
+                  MentorMind: Your Journey, Our Guidance
                 </h1>
                 <p className="mx-auto mb-9 max-w-[600px] text-base font-medium text-white sm:text-lg sm:leading-[1.44]">
-                  Next.js SaaS Boilerplate and Starter Kit designed and built
-                  for SaaS startups. It comes with all necessary integrations,
-                  pages, and components you need to launch a feature-rich SaaS
-                  websites.
+                  At MentorMind, we are revolutionizing the way students prepare
+                  for the JEE exam. Through our innovative platform, we provide
+                  personalized guidance and support to aspiring engineers,
+                  helping them navigate the complexities of the exam with
+                  confidence and ease. Our team of experienced mentors utilizes
+                  cutting-edge AI technology to tailor learning paths to each
+                  students unique strengths and weaknesses, ensuring maximum
+                  effectiveness and efficiency.
                 </p>
                 <ul className="mb-10 flex flex-wrap items-center justify-center gap-5">
                   <li>
                     <Link
-                      href="https://nextjstemplates.com/templates/play"
+                      href="/mentor"
                       className="inline-flex items-center justify-center rounded-md bg-white px-7 py-[14px] text-center text-base font-medium text-dark shadow-1 transition duration-300 ease-in-out hover:bg-gray-2"
                     >
-                      Download Now
+                      Find your mentor!
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="https://github.com/nextjsTemplates/play-nextjs"
+                      href="/signup"
                       target="_blank"
                       className="flex items-center gap-4 rounded-md bg-white/[0.12] px-6 py-[14px] text-base font-medium text-white transition duration-300 ease-in-out hover:bg-white hover:text-dark"
                     >
@@ -56,12 +60,12 @@ const Hero = () => {
                           </clipPath>
                         </defs>
                       </svg>
-                      Star on Github
+                      Sign up
                     </Link>
                   </li>
                 </ul>
 
-                <div>
+                {/* <div>
                   <p className="mb-4 text-center text-base font-medium text-white/60">
                     Play is now available for all popular frameworks
                   </p>
@@ -197,7 +201,7 @@ const Hero = () => {
                       </svg>
                     </a>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
 
@@ -206,7 +210,7 @@ const Hero = () => {
                 className="wow fadeInUp relative z-10 mx-auto max-w-[845px]"
                 data-wow-delay=".25s"
               >
-                <div className="mt-16">
+                {/* <div className="mt-16">
                   <Image
                     src="/images/hero/hero-image.jpg"
                     alt="hero"
@@ -214,7 +218,7 @@ const Hero = () => {
                     width={845}
                     height={316}
                   />
-                </div>
+                </div> */}
                 <div className="absolute -left-9 bottom-0 z-[-1]">
                   <svg
                     width="134"
