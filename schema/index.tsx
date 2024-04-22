@@ -1,18 +1,25 @@
 import * as z from 'zod';
 
 export const Schema = z.object({
-    email: z.string().email({
+    Region: z.string().email({
         message: "Please enter a valid email address"
     }),
-    name: z.string().min(1, {
+    Language: z.string().min(1, {
         message: "Please enter your name"
     }),
-    password: z.string().min(6, {
+    PreferredTime: z.string().min(6, {
         message: "Password must be at least 6 characters long"
     }),
-    confirmPassword: z.string().min(6, {
+    PreferredDays: z.string().min(6, {
+        message: "Password must be at least 6 characters long"
+    }),
+    Subjects: z.string().min(6, {
+        message: "Password must be at least 6 characters long"
+    }),
+    Mode: z.string().min(6, {
         message: "Password must be at least 6 characters long"
     })
+
 })
 
 export const LoginSchema = z.object({

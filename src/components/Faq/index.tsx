@@ -6,9 +6,9 @@ const Faq = () => {
     <section className="relative z-20 overflow-hidden bg-white pb-8 pt-20 dark:bg-dark lg:pb-[50px] lg:pt-[120px]">
       <div className="container">
         <SectionTitle
-          subtitle="FAQ"
-          title="Any Questions? Answered"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          subtitle="check out!"
+          title="Main Features"
+          paragraph="Discover the features that make MentorMind the preferred choice for JEE aspirants"
           width="640px"
           center
         />
@@ -16,31 +16,31 @@ const Faq = () => {
         <div className="-mx-4 mt-[60px] flex flex-wrap lg:mt-20">
           <div className="w-full px-4 lg:w-1/2">
             <SingleFaq
-              question="How to use TailGrids?"
-              answer="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              question="Personalized Learning Paths"
+              answer="Utilize advanced AI algorithms to create customized study plans based on each student's strengths, weaknesses, and learning pace."
             />
             <SingleFaq
-              question="How to download icons from LineIcons?"
-              answer="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              question="Live Mentor Sessions"
+              answer="Provide access to live sessions with experienced mentors who offer guidance, clarification, and motivation to students, addressing their doubts and queries in real-time."
             />
             <SingleFaq
-              question="Is GrayGrids part of UIdeck?"
-              answer="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              question="Progress Tracking Dashboard"
+              answer="Enable students to track their progress and performance through intuitive dashboards that display scores, strengths, weaknesses, and areas requiring further focus."
             />
           </div>
 
           <div className="w-full px-4 lg:w-1/2">
             <SingleFaq
-              question="Can I use this template for commercial project?"
+              question="Personalized Mentor Matching"
+              answer="Our advanced AI algorithms analyze your strengths, weaknesses, and goals to connect you with the perfect mentor tailored to your individual learning needs, ensuring personalized guidance and support throughout your JEE preparation journey"
+            />
+            <SingleFaq
+              question="Progress Tracking Dashboard"
               answer="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
             />
             <SingleFaq
-              question="Do you have plan to releasing Play Pro?"
-              answer="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
-            />
-            <SingleFaq
-              question="Where and how to host this template?"
-              answer="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              question="Community Forums"
+              answer="Foster a sense of community and collaboration by integrating forums or discussion boards where students can interact with peers, share insights, and seek advice from mentors"
             />
           </div>
         </div>

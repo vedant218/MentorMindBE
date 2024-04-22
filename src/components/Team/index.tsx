@@ -5,7 +5,7 @@ import SingleTeam from "./SingleTeam";
 const teamData: TeamType[] = [
   {
     id: 1,
-    name: "Adveen Desuza",
+    name: "Vedant Deshmukh",
     designation: "UI Designer",
     image: "/images/team/team-01.png",
     facebookLink: "/#",
@@ -14,7 +14,7 @@ const teamData: TeamType[] = [
   },
   {
     id: 2,
-    name: "Jezmin uniya",
+    name: "Yash Vaskar",
     designation: "Product Designer",
     image: "/images/team/team-02.png",
     facebookLink: "/#",
@@ -23,7 +23,7 @@ const teamData: TeamType[] = [
   },
   {
     id: 3,
-    name: "Andrieo Gloree",
+    name: "Komalika Aacharya",
     designation: "App Developer",
     image: "/images/team/team-03.png",
     facebookLink: "/#",
@@ -32,7 +32,7 @@ const teamData: TeamType[] = [
   },
   {
     id: 4,
-    name: "Jackie Sanders",
+    name: "Jay",
     designation: "Content Writer",
     image: "/images/team/team-04.png",
     facebookLink: "/#",

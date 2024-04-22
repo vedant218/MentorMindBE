@@ -3,6 +3,8 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 import Team from "@/components/Team";
 import { Metadata } from "next";
 import { InputForm } from "@/components/InputForm";
+import { CardWithForm } from "@/components/Mentor";
+
 
 export const metadata: Metadata = {
   title:
@@ -10,13 +12,15 @@ export const metadata: Metadata = {
   description: "MentorMind: Your Journey, Our Guidance",
 };
 
-const page = () => {
+const MentorPage = () => {
   return (
     <>
     <Breadcrumb pageName="form Page" />
-    <InputForm></InputForm>
+    <InputForm/>
+    {/* <CardWithForm></CardWithForm> */}
+    
     </>
   )
 }
 
-export default page
+export default MentorPage

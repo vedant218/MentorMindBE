@@ -28,11 +28,11 @@ export default function Home() {
       <About />
       <CallToAction />
       <Testimonials />
-      {/* <Faq /> */}
+      <Faq />
       <Team />
       <HomeBlogSection posts={posts} />
-      <Contact />
-      <Clients />
+      {/* <Contact /> */}
+      {/* <Clients /> */}
     </main>
   );
 }
