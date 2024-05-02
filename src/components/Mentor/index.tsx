@@ -40,7 +40,7 @@ import { InputForm } from "../InputForm";
 
 export function CardWithForm() {
   return (
-    <Card className="">
+    <><Card className="">
       <CardHeader>
         <CardTitle>Find your Mentor!</CardTitle>
         <CardDescription>
@@ -52,5 +52,6 @@ export function CardWithForm() {
         <InputForm />
       </CardContent>
     </Card>
+    </>
   );
 }
