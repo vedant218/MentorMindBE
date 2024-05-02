@@ -40,18 +40,17 @@ import { InputForm } from "../InputForm";
 
 export function CardWithForm() {
   return (
-    <Card className="w-[350px]">
+    <Card className="">
       <CardHeader>
-        <CardTitle>Create project</CardTitle>
-        <CardDescription>Deploy your new project in one-click.</CardDescription>
+        <CardTitle>Find your Mentor!</CardTitle>
+        <CardDescription>
+          Use our proprietary mentor matching system to find the best mentor for
+          you!.
+        </CardDescription>
       </CardHeader>
       <CardContent>
-        <InputForm/>
+        <InputForm />
       </CardContent>
-      <CardFooter className="flex justify-between">
-        <Button variant="outline">Cancel</Button>
-        <Button>Deploy</Button>
-      </CardFooter>
     </Card>
   );
 }

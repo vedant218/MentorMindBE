@@ -18,7 +18,8 @@ const featuresData: Feature[] = [
       </svg>
     ),
     title: "Personalized Learning Paths",
-    paragraph: "Utilize advanced AI algorithms to create customized study plans based on each student's strengths, weaknesses, and learning pace.",
+    paragraph:
+      "Utilize advanced AI algorithms to create customized study plans based on each student's strengths, weaknesses, and learning pace.",
     btn: "Learn More",
     btnLink: "/#",
   },
@@ -38,8 +39,9 @@ const featuresData: Feature[] = [
         />
       </svg>
     ),
-    title: "Live Mentor Sessions",
-    paragraph: "Provide access to live sessions with experienced mentors who offer guidance, clarification, and motivation to students, addressing their doubts and queries in real-time.",
+    title: "Forum Page",
+    paragraph:
+      " forum is an online discussion board where people can ask questions, share their experiences, and discuss topics of mutual interest. Forums are an excellent way to create social connections and a sense of community. They can also help you to cultivate an interest group about a particular subject.",
     btn: "Learn More",
     btnLink: "/#",
   },
@@ -92,7 +94,8 @@ const featuresData: Feature[] = [
       </svg>
     ),
     title: "Progress Tracking Dashboard",
-    paragraph: "Enable students to track their progress and performance through intuitive dashboards that display scores, strengths, weaknesses, and areas requiring further focus.",
+    paragraph:
+      "Enable students to track their progress and performance through intuitive dashboards that display scores, strengths, weaknesses, and areas requiring further focus.",
     btn: "Learn More",
     btnLink: "/#",
   },
@@ -125,7 +128,8 @@ const featuresData: Feature[] = [
       </svg>
     ),
     title: "Personalized Mentor Matching",
-    paragraph: "Our advanced AI algorithms analyze your strengths, weaknesses, and goals to connect you with the perfect mentor tailored to your individual learning needs, ensuring personalized guidance and support throughout your JEE preparation journey",
+    paragraph:
+      "Our advanced AI algorithms analyze your strengths, weaknesses, and goals to connect you with the perfect mentor tailored to your individual learning needs, ensuring personalized guidance and support throughout your JEE preparation journey",
     btn: "Learn More",
     btnLink: "/#",
   },

@@ -23,6 +23,25 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import Link from "next/link";
+import axios from "axios";
+
+const config = {
+  method: "post",
+  url: "http://127.0.0.1:5000/api",
+  headers: {
+    "Content-Type": "application/json",
+    Accept: "application/json",
+  },
+  data: Form,
+};
+
+axios(config)
+  .then((response) => {
+    console.log(JSON.stringify(response.data));
+  })
+  .catch((error) => {
+    console.log(error);
+  });
 
 const FormSchema = z.object({
   Region: z.string(),
@@ -62,7 +81,10 @@ export function InputForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="w-2/3 space-y-6">
+      <form
+        onSubmit={form.handleSubmit(onSubmit)}
+        className="h-screen w-2/3 justify-between space-y-6"
+      >
         <FormField
           control={form.control}
           name="Region"
@@ -86,7 +108,9 @@ export function InputForm() {
               <FormControl>
                 <Input placeholder="Enter" {...field} />
               </FormControl>
-              <FormDescription>Select your Preferred Languages</FormDescription>
+              <FormDescription>
+                Select your Preferred Languages(Separated by commas)
+              </FormDescription>
               <FormMessage />
             </FormItem>
           )}
@@ -114,7 +138,9 @@ export function InputForm() {
               <FormControl>
                 <Input placeholder="Enter" {...field} />
               </FormControl>
-              <FormDescription>Select your Preferred Days</FormDescription>
+              <FormDescription>
+                Select your Preferred Days (Separated by commas)
+              </FormDescription>
               <FormMessage />
             </FormItem>
           )}
@@ -160,15 +186,12 @@ export function InputForm() {
                   </SelectTrigger>
                 </FormControl>
                 <SelectContent>
-                  <SelectItem value="m@example.com">Online</SelectItem>
-                  <SelectItem value="m@google.com">One on One</SelectItem>
-                  <SelectItem value="m@support.com">Doubt Solving</SelectItem>
+                  <SelectItem value="Online">Online</SelectItem>
+                  <SelectItem value="One on One">One on One</SelectItem>
+                  <SelectItem value="Doubt Solving">Doubt Solving</SelectItem>
                 </SelectContent>
               </Select>
-              <FormDescription>
-                You can manage email addresses in your{" "}
-                <Link href="/examples/forms">email settings</Link>.
-              </FormDescription>
+              <FormDescription></FormDescription>
               <FormMessage />
             </FormItem>
           )}

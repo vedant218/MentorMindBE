@@ -21,12 +21,12 @@ const About = () => {
                   features below to see how our flexible and adaptive approach
                   can help you achieve your academic goals:
                   <br /> <br />
-                  Explore the chatbot below to see how our flexible and adaptive
-                  approach can help you achieve your academic goals:
+                  Explore the AI assistant below to see how our flexible and
+                  adaptive approach can help you achieve your academic goals:
                 </p>
 
                 <a
-                  href="https://www.morphic.sh/"
+                  href="http://localhost:3001/"
                   className="inline-flex items-center justify-center rounded-md bg-primary px-7 py-3 text-center text-base font-medium text-white duration-300 hover:bg-primary/90"
                 >
                   Link to chatbot
