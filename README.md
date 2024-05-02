@@ -16,7 +16,7 @@ NextAuth is used for authentication, offering secure login and user management. 
 
 ### Hosting and UI
 
-MentorMind is hosted on [Vercel](https://vercel.com/), a cloud platform for static sites and Serverless Functions. The user interface is delivered using [shadcdn](https://www.shadcdn.com/), ensuring fast and reliable content delivery.
+MentorMind is hosted on [Vercel](https://vercel.com/), a cloud platform for static sites and Serverless Functions. The user interface is delivered using [shadcdn](https://ui.shadcn.com/), ensuring fast and reliable content delivery.
 
 ### AI Integration
 
