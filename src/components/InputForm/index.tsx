@@ -3,7 +3,6 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -16,15 +15,37 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { toast } from "@/components/ui/use-toast";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import Link from "next/link";
 
 const FormSchema = z.object({
   Region: z.string(),
   Language: z.string(),
   PreferredTime: z.string(),
-  PreferredDays: z.string() ,
+  PreferredDays: z.string(),
   Subjects: z.string(),
   Mode: z.string(),
 });
+
+function onSubmit(data: z.infer<typeof FormSchema>) {
+  console.log(
+    <code className="text-white">{JSON.stringify(data, null, 2)}</code>,
+  );
+  toast({
+    title: "You submitted the following values:",
+    description: (
+      <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
+        <code className="text-white">{JSON.stringify(data, null, 2)}</code>
+      </pre>
+    ),
+  });
+}
 
 export function InputForm() {
   const form = useForm<z.infer<typeof FormSchema>>({
@@ -33,22 +54,11 @@ export function InputForm() {
       Region: "",
       Language: "",
       PreferredTime: "",
-      PreferredDays: "" ,
+      PreferredDays: "",
       Subjects: "",
       Mode: "",
     },
   });
-
-  function onSubmit(data: z.infer<typeof FormSchema>) {
-    toast({
-      title: "You submitted the following values:",
-      description: (
-        <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
-          <code className="text-white">{JSON.stringify(data, null, 2)}</code>
-        </pre>
-      ),
-    });
-  }
 
   return (
     <Form {...form}>
@@ -60,11 +70,9 @@ export function InputForm() {
             <FormItem>
               <FormLabel>Region</FormLabel>
               <FormControl>
-                <Input placeholder="shadcn" {...field} />
+                <Input placeholder="Enter" {...field} />
               </FormControl>
-              <FormDescription>
-                Select your Preferred Region
-              </FormDescription>
+              <FormDescription>Select your Preferred Region</FormDescription>
               <FormMessage />
             </FormItem>
           )}
@@ -76,11 +84,9 @@ export function InputForm() {
             <FormItem>
               <FormLabel>Languages</FormLabel>
               <FormControl>
-                <Input placeholder="shadcn" {...field} />
+                <Input placeholder="Enter" {...field} />
               </FormControl>
-              <FormDescription>
-              Select your Preferred Languages
-              </FormDescription>
+              <FormDescription>Select your Preferred Languages</FormDescription>
               <FormMessage />
             </FormItem>
           )}
@@ -92,11 +98,9 @@ export function InputForm() {
             <FormItem>
               <FormLabel>PreferredTime</FormLabel>
               <FormControl>
-                <Input placeholder="shadcn" {...field} />
+                <Input placeholder="Enter" {...field} />
               </FormControl>
-              <FormDescription>
-              Select your Preferred Time
-              </FormDescription>
+              <FormDescription>Select your Preferred Time</FormDescription>
               <FormMessage />
             </FormItem>
           )}
@@ -108,11 +112,9 @@ export function InputForm() {
             <FormItem>
               <FormLabel>PreferredDays</FormLabel>
               <FormControl>
-                <Input placeholder="shadcn" {...field} />
+                <Input placeholder="Enter" {...field} />
               </FormControl>
-              <FormDescription>
-              Select your Preferred Days
-              </FormDescription>
+              <FormDescription>Select your Preferred Days</FormDescription>
               <FormMessage />
             </FormItem>
           )}
@@ -124,26 +126,48 @@ export function InputForm() {
             <FormItem>
               <FormLabel>Subjects</FormLabel>
               <FormControl>
-                <Input placeholder="shadcn" {...field} />
+                <Input placeholder="Enter" {...field} />
               </FormControl>
-              <FormDescription>
-              Select the subjects
-              </FormDescription>
+              <FormDescription>Select the subjects</FormDescription>
               <FormMessage />
             </FormItem>
           )}
         />
-        <FormField
+        {/* <FormField
           control={form.control}
           name="Mode"
           render={({ field }) => (
             <FormItem>
               <FormLabel>Mode</FormLabel>
               <FormControl>
-                <Input placeholder="shadcn" {...field} />
+                <Input placeholder="Enter" {...field} />
               </FormControl>
+              <FormDescription>Select Mode of Mentorship</FormDescription>
+              <FormMessage />
+            </FormItem>
+          )}
+        /> */}
+        <FormField
+          control={form.control}
+          name="Mode"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Mode</FormLabel>
+              <Select onValueChange={field.onChange} defaultValue={field.value}>
+                <FormControl>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Select a mode to display" />
+                  </SelectTrigger>
+                </FormControl>
+                <SelectContent>
+                  <SelectItem value="m@example.com">Online</SelectItem>
+                  <SelectItem value="m@google.com">One on One</SelectItem>
+                  <SelectItem value="m@support.com">Doubt Solving</SelectItem>
+                </SelectContent>
+              </Select>
               <FormDescription>
-              Select Mode of Mentorship
+                You can manage email addresses in your{" "}
+                <Link href="/examples/forms">email settings</Link>.
               </FormDescription>
               <FormMessage />
             </FormItem>

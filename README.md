@@ -43,6 +43,13 @@ To get started with MentorMind, follow these steps:
 6. **Start the Next.js app** by running `npm run dev` in the terminal.
 
 
+Recommendation System Output:
+
+![alt text](<WhatsApp Image 2024-04-21 at 1.05.50 PM.jpeg>)
+
+![alt text](<WhatsApp Image 2024-04-21 at 1.02.13 PM.jpeg>)
+
+![alt text](image.png)
 
 
 MentorMind is released under the MIT License. See the [LICENSE](LICENSE) file for more information.

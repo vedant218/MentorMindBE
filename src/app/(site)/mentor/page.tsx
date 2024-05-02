@@ -6,6 +6,7 @@ import { InputForm } from "@/components/InputForm";
 import { CardWithForm } from "@/components/Mentor";
 
 
+
 export const metadata: Metadata = {
   title:
     "MentorMind",
@@ -16,8 +17,8 @@ const MentorPage = () => {
   return (
     <>
     <Breadcrumb pageName="form Page" />
-    <InputForm/>
-    {/* <CardWithForm></CardWithForm> */}
+    {/* <InputForm/> */}
+    <CardWithForm></CardWithForm>
     
     </>
   )
