@@ -11,46 +11,54 @@ import {
 
 const invoices = [
   {
-    paymentStatus: "INV001",
-    mentorName: "Paid",
-    totalAmount: "$250.00",
-    paymentMethod: "Credit Card",
+    mentorName: "Komalika Acharya",
+    Region: "Goa",
+    Languages: "Santali",
+    PreferredTime: "Morning, Afternoon, Evening",
+    PreferredDay: "Tuesday",
+    subjects: "Physics",
+    Mode: "doubt solving",
+    similarityScore: "0.9999063717768877",
   },
   {
-    paymentStatus: "INV002",
-    mentorName: "Pending",
-    totalAmount: "$150.00",
-    paymentMethod: "PayPal",
+    mentorName: "Female Titan",
+    Region: "Goa",
+    Languages: "Santali",
+    PreferredTime: "Morning, Afternoon, Evening, Night",
+    PreferredDay: "Tuesday",
+    subjects: "Physics",
+    Mode: "doubt solving",
+    similarityScore: "0.7196418941020966",
   },
   {
-    invoice: "INV003",
-    mentorName: "Unpaid",
-    totalAmount: "$350.00",
-    paymentMethod: "Bank Transfer",
+    mentorName: "Nezuko Kamado",
+    Region: "Goa",
+    Languages: "Santali",
+    PreferredTime: "Afternoon, Evening",
+    PreferredDay: "Tuesday",
+    subjects: "Physics",
+    Mode: "doubt solving",
+    similarityScore: "0.7167949676513672",
   },
   {
-    invoice: "INV004",
-    mentorName: "Paid",
-    totalAmount: "$450.00",
-    paymentMethod: "Credit Card",
+    mentorName: "Shinobu Kocho",
+    Region: "Goa",
+    Languages: "Santali",
+    PreferredTime: "Morning, Evening, Night",
+    PreferredDay: "Tuesday",
+    subjects: "Physics",
+    Mode: "doubt solving",
+    similarityScore: "0.5374325811862946",
   },
   {
-    invoice: "INV005",
-    mentorName: "Paid",
-    totalAmount: "$550.00",
-    paymentMethod: "PayPal",
-  },
-  {
-    invoice: "INV006",
-    mentorName: "Pending",
-    totalAmount: "$200.00",
-    paymentMethod: "Bank Transfer",
-  },
-  {
-    invoice: "INV007",
-    mentorName: "Unpaid",
-    totalAmount: "$300.00",
-    paymentMethod: "Credit Card",
+    mentorName: "Grand Zenos",
+    Region: "Goa",
+    Languages: "Santali",
+    PreferredTime: "Morning, Evening, Night",
+    PreferredDay: "Tuesday",
+    subjects: "Physics",
+    Mode: "doubt solving",
+    similarityScore: "0.5374325811862946",
   },
 ];
 
@@ -72,15 +80,17 @@ export function Tabledata() {
       </TableHeader>
       <TableBody>
         {invoices.map((invoice) => (
-          <TableRow key={invoice.invoice}>
+          <TableRow key={invoice.mentorName}>
             <TableCell className="font-medium">{invoice.mentorName}</TableCell>
-            <TableCell>{invoice.paymentStatus}</TableCell>
-            <TableCell>{invoice.paymentMethod}</TableCell>
-            <TableCell>{invoice.paymentMethod}</TableCell>
-            <TableCell>{invoice.paymentMethod}</TableCell>
-            <TableCell>{invoice.paymentMethod}</TableCell>
-            <TableCell>{invoice.paymentMethod}</TableCell>
-            <TableCell className="text-right">{invoice.totalAmount}</TableCell>
+            <TableCell>{invoice.Region}</TableCell>
+            <TableCell>{invoice.Languages}</TableCell>
+            <TableCell>{invoice.PreferredTime}</TableCell>
+            <TableCell>{invoice.PreferredDay}</TableCell>
+            <TableCell>{invoice.subjects}</TableCell>
+            <TableCell>{invoice.Mode}</TableCell>
+            <TableCell className="text-right">
+              {invoice.similarityScore}
+            </TableCell>
           </TableRow>
         ))}
       </TableBody>

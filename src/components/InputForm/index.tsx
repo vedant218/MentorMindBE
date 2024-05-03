@@ -53,6 +53,7 @@ const FormSchema = z.object({
 });
 
 function onSubmit(data: z.infer<typeof FormSchema>) {
+  axios(config);
   console.log(
     <code className="text-white">{JSON.stringify(data, null, 2)}</code>,
   );
